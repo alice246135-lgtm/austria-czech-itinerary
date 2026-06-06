@@ -10,159 +10,612 @@
 <body>
 
   <!-- Hero Section -->
-  <section class="hero" id="home">
+  <section class="parallax-wrapper parallax-hero" id="home">
     <div class="hero-content">
-      <h1>奧捷深度行</h1>
-      <p>Salzburg · Český Krumlov · Prague · Vienna</p>
+      <h1>奧捷深度行 12天</h1>
+      <p class="subtitle">Salzburg · Český Krumlov · Prague · Vienna</p>
       <div class="dates">2026.07.15 – 07.28</div>
     </div>
   </section>
 
-  <!-- Overview Section -->
-  <section class="section" id="overview">
-    <h2 class="section-title">行程概覽</h2>
-    <div class="overview-grid">
-      <div class="card">
-        <h3>✈️ 航班資訊 (EVA Air)</h3>
-        <p><strong>去程：</strong> 7/15 (三) 23:45<br>TPE → VIE (07:15 +1)</p>
-        <p style="margin-top: 1rem;"><strong>回程：</strong> 7/27 (一) 12:30<br>VIE → TPE (06:30 +1)</p>
-      </div>
-      <div class="card">
-        <h3>🗺️ 路線規劃</h3>
-        <p>逆時針環狀路線，不走回頭路：</p>
-        <ul style="margin-top: 1rem; margin-left: 1.5rem;">
-          <li>VIE機場 →(ÖBB 3h)→ 薩爾斯堡</li>
-          <li>薩爾斯堡 →(Shuttle 3h)→ CK小鎮</li>
-          <li>CK小鎮 →(RegioJet 3h)→ 布拉格</li>
-          <li>布拉格 →(Train 4h)→ 維也納</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Watercolor Gallery Section -->
-  <section class="section" id="gallery">
-    <h2 class="section-title">水彩旅繪</h2>
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="imgs/02-scene-salzburg-mirabellgarden.png" alt="薩爾斯堡 米拉貝爾宮花園">
-        <div class="gallery-caption">
-          <h4>薩爾斯堡 Salzburg</h4>
-          <p>米拉貝爾宮花園與要塞全景</p>
-        </div>
-      </div>
-      <div class="gallery-item">
-        <img src="imgs/03-scene-prague-ck-panorama.png" alt="布拉格與CK小鎮">
-        <div class="gallery-caption">
-          <h4>波西米亞風情</h4>
-          <p>清晨查理大橋 & 童話CK小鎮</p>
-        </div>
-      </div>
-      <div class="gallery-item">
-        <img src="imgs/04-scene-vienna-schoenbrunn-goldensaal.png" alt="維也納 熊布朗宮與金色大廳">
-        <div class="gallery-caption">
-          <h4>維也納 Vienna</h4>
-          <p>熊布朗宮花園 & 金色大廳音樂會</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Timeline Section -->
-  <section class="section" id="timeline">
-    <h2 class="section-title">每日行程</h2>
-    <div class="timeline">
+  <div class="glass-container" style="margin-top: -10vh; margin-bottom: 4rem; position: relative; z-index: 10;">
+    <!-- Overview & Flights -->
+    <div class="glass-card visible">
+      <h2 class="section-title">行前準備與概覽</h2>
       
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <span class="timeline-date">Day 1｜7/16 (四)</span>
-          <h4>直奔薩爾斯堡 🇦🇹</h4>
-          <p>抵達維也納機場後，搭乘ÖBB火車直達薩爾斯堡。漫步米拉貝爾宮花園與蓋特萊德巷，晚間於米拉貝爾宮欣賞莫札特音樂會。</p>
-        </div>
+      <div class="alert alert-info">
+        <h4>🗺️ 路線規劃</h4>
+        <p><strong>逆時針環狀路線，不走回頭路：</strong></p>
+        <p style="margin-top: 0.5rem; color: #444;">VIE機場 →(ÖBB 3h)→ 薩爾斯堡 →(Shuttle 3h)→ CK小鎮 →(RegioJet 3h)→ 布拉格 →(Train 4h)→ 維也納</p>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <span class="timeline-date">Day 2｜7/17 (五)</span>
-          <h4>國王湖深度慢遊 🇦🇹</h4>
-          <p>搭乘巴士前往貝希特斯加登，轉乘至國王湖。搭乘電動船遊湖，享受Fischerstüberl煙燻鱒魚午餐，午後搭乘耶拿峰纜車俯瞰國王湖。</p>
+      <h3>✈️ 航班資訊 <span style="font-size: 1rem; color: #666; font-weight: normal;">(EVA Air)</span></h3>
+      <table>
+        <thead>
+          <tr>
+            <th>方向</th>
+            <th>日期</th>
+            <th>時間</th>
+            <th>航線</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>去程</td>
+            <td>7/15 (三)</td>
+            <td class="time-col">23:45</td>
+            <td>TPE → VIE (07:15 +1)</td>
+          </tr>
+          <tr>
+            <td>回程</td>
+            <td>7/27 (一)</td>
+            <td class="time-col">12:30</td>
+            <td>VIE → TPE (06:30 +1)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 style="margin-top: 2rem;">☑️ 預訂狀態</h3>
+      <ul class="styled-list">
+        <li>✅ ÖBB 火車 VIE機場→薩爾斯堡 (7/16 09:02)</li>
+        <li>✅ CK Shuttle 薩爾斯堡→CK (7/18 17:00)</li>
+        <li>✅ RegioJet 巴士 CK→布拉格 (7/19) & 布拉格→維也納 (7/24)</li>
+        <li>✅ 國王湖電動船 09:15 (7/17)</li>
+        <li>✅ 米拉貝爾宮音樂會 20:00 × 2張 (7/16)</li>
+        <li>⚡ <strong>布拉格城堡 Circuit B (7/21) — 7/19 抵達當晚訂！</strong> <span class="badge badge-action">待處理</span></li>
+        <li>✅ Sisi Pass 熊布朗宮 (7/25 08:45–09:00)</li>
+        <li>✅ 上美景宮 Belvedere (7/26 09:00)</li>
+        <li>✅ 金色大廳音樂會 站票×2 (7/26 20:00)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Salzburg Section (Days 1-3) -->
+  <section class="parallax-wrapper parallax-salzburg">
+    <div class="glass-container">
+      
+      <!-- Day 1 -->
+      <div class="glass-card timeline-item">
+        <div class="day-header">
+          <div class="day-title">Day 1｜7/16 (四)　直奔薩爾斯堡 🇦🇹</div>
+          <div class="day-weather">☀️ 24°C / 13°C</div>
         </div>
+        <table>
+          <thead>
+            <tr><th>時間</th><th>行程</th><th>備註</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="time-col">07:15</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Vienna+Airport" target="_blank" class="icon-link">📍 維也納機場 (VIE)</a></td>
+              <td class="note-col">入境、取行李、換匯</td>
+            </tr>
+            <tr>
+              <td class="time-col">09:02</td>
+              <td class="activity-col">🚂 ÖBB 火車 → 薩爾斯堡</td>
+              <td class="note-col"><span class="badge badge-booked">已購票</span> 機場站出發，約3小時</td>
+            </tr>
+            <tr>
+              <td class="time-col">13:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Vier+Jahreszeiten+Salzburg" target="_blank" class="icon-link">🏨 Check-in Vier Jahreszeiten</a></td>
+              <td class="note-col">新城區，距火車站步行可達</td>
+            </tr>
+            <tr>
+              <td class="time-col">15:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Mirabell+Palace+Salzburg" target="_blank" class="icon-link">📍 米拉貝爾宮花園</a></td>
+              <td class="note-col">真善美拍攝場景，免費入園</td>
+            </tr>
+            <tr>
+              <td class="time-col">17:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Getreidegasse+Salzburg" target="_blank" class="icon-link">📍 蓋特萊德巷</a></td>
+              <td class="note-col">莫札特出生地，中世紀鐵製招牌</td>
+            </tr>
+            <tr>
+              <td class="time-col">18:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Stieglkeller+Salzburg" target="_blank" class="icon-link">🍽️ 晚餐：Stieglkeller</a></td>
+              <td class="note-col">要塞山腳，炸豬排＋在地啤酒</td>
+            </tr>
+            <tr>
+              <td class="time-col">19:30</td>
+              <td class="activity-col">🎵 入場 米拉貝爾宮音樂會</td>
+              <td class="note-col"><span class="badge badge-booked">已購票</span> 20:00開演，Row 3 / Seat 11<br><strong>注意：不可錄影錄音</strong></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <span class="timeline-date">Day 3｜7/18 (六)</span>
-          <h4>舊城巡禮 → CK小鎮 🇦🇹🇨🇿</h4>
-          <p>早晨參觀海爾布倫宮惡作劇噴泉，下午登薩爾斯堡要塞。傍晚搭乘CK Shuttle前往童話小鎮Český Krumlov。</p>
+      <!-- Day 2 -->
+      <div class="glass-card timeline-item">
+        <div class="day-header">
+          <div class="day-title">Day 2｜7/17 (五)　國王湖深度慢遊 🇦🇹</div>
         </div>
+        <table>
+          <thead>
+            <tr><th>時間</th><th>行程</th><th>備註</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="time-col">07:10</td>
+              <td class="activity-col">🚌 Bus 840 → 貝希特斯加登</td>
+              <td class="note-col">向司機買 RVO公車一日票</td>
+            </tr>
+            <tr>
+              <td class="time-col">08:15</td>
+              <td class="activity-col">轉 Bus 841 → 國王湖</td>
+              <td class="note-col">約15分鐘</td>
+            </tr>
+            <tr>
+              <td class="time-col">09:15</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Konigssee" target="_blank" class="icon-link">📍 國王湖電動船遊湖</a></td>
+              <td class="note-col"><span class="badge badge-booked">已購票</span> Seelände→Salet<br><strong>⚠️ 回程票請務必保留！</strong></td>
+            </tr>
+            <tr>
+              <td class="time-col">11:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Fischerstuberl+Konigssee" target="_blank" class="icon-link">🍽️ 午餐：Fischerstüberl</a></td>
+              <td class="note-col">湖畔，招牌煙燻鱒魚</td>
+            </tr>
+            <tr>
+              <td class="time-col">13:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Jennerbahn" target="_blank" class="icon-link">📍 耶拿峰纜車 (Jennerbahn)</a></td>
+              <td class="note-col">海拔1800m，俯瞰國王湖</td>
+            </tr>
+            <tr>
+              <td class="time-col">16:15</td>
+              <td class="activity-col">🚌 搭公車返回薩爾斯堡</td>
+              <td class="note-col">RVO一日票繼續有效</td>
+            </tr>
+            <tr>
+              <td class="time-col">19:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Sternbrau+Salzburg" target="_blank" class="icon-link">🍽️ 晚餐：Sternbräu</a></td>
+              <td class="note-col">傳統奧地利餐廳，夏日啤酒花園</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <span class="timeline-date">Day 4｜7/19 (日)</span>
-          <h4>CK晨間時光 → 布拉格 🇨🇿</h4>
-          <p>欣賞CK城堡外觀與彩繪塔，漫步斗篷橋與城堡花園。下午搭乘RegioJet巴士前往布拉格，入住Hotel Golden Crown。</p>
+      <!-- Day 3 -->
+      <div class="glass-card timeline-item">
+        <div class="day-header">
+          <div class="day-title">Day 3｜7/18 (六)　舊城巡禮 → CK小鎮 🇦🇹</div>
         </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <span class="timeline-date">Day 5-8｜7/20 - 7/23</span>
-          <h4>布拉格深度漫遊 🇨🇿</h4>
-          <p>舊城區與猶太區巡禮、查理大橋、布拉格城堡與聖維特大教堂。安排卡爾斯特因城堡(Karlštejn)半日遊，並於萊特納公園欣賞最美夕陽。</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <span class="timeline-date">Day 9｜7/24 (五)</span>
-          <h4>抵達維也納 🇦🇹</h4>
-          <p>搭乘RegioJet火車前往維也納。參觀聖史蒂芬大教堂，漫步格拉本大街，晚餐享用Plachutta百年清燉牛肉鍋。</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <span class="timeline-date">Day 10-11｜7/25 - 7/26</span>
-          <h4>皇家宮殿與音樂饗宴 🇦🇹</h4>
-          <p>使用Sisi Pass參觀熊布朗宮與霍夫堡。走訪納許市場、上美景宮欣賞克林姆《吻》真跡。最後一晚於金色大廳享受極致音樂饗宴。</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <span class="timeline-date">Day 12｜7/27 (一)</span>
-          <h4>賦歸 🇦🇹</h4>
-          <p>整理行囊，搭乘Railjet直達維也納機場，辦理退稅手續後搭機返台，帶著滿滿的回憶結束奧捷之旅。</p>
-        </div>
+        <table>
+          <thead>
+            <tr><th>時間</th><th>行程</th><th>備註</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="time-col">09:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Hellbrunn+Palace" target="_blank" class="icon-link">📍 海爾布倫宮惡作劇噴泉</a></td>
+              <td class="note-col">建議提前預約，導覽約1小時</td>
+            </tr>
+            <tr>
+              <td class="time-col">12:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Salzburg+Cathedral" target="_blank" class="icon-link">🎵 大教堂正午管風琴</a></td>
+              <td class="note-col"><span class="badge badge-optional">看狀況</span> 免費聆聽</td>
+            </tr>
+            <tr>
+              <td class="time-col">13:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Restaurant+Triangel+Salzburg" target="_blank" class="icon-link">🍽️ 午餐：Triangel</a></td>
+              <td class="note-col">舊城區，位置方便</td>
+            </tr>
+            <tr>
+              <td class="time-col">14:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Hohensalzburg+Fortress" target="_blank" class="icon-link">📍 薩爾斯堡要塞</a></td>
+              <td class="note-col">搭纜車上山，中歐最完整城堡</td>
+            </tr>
+            <tr>
+              <td class="time-col">17:00</td>
+              <td class="activity-col">🚐 CK Shuttle 出發</td>
+              <td class="note-col"><span class="badge badge-booked">已預約</span> 火車總站集合</td>
+            </tr>
+            <tr>
+              <td class="time-col">20:15</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Penzion+Landauer+Cesky+Krumlov" target="_blank" class="icon-link">🏨 Check-in Penzion Landauer</a></td>
+              <td class="note-col">溫馨民宿</td>
+            </tr>
+            <tr>
+              <td class="time-col">20:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Papas+Living+Restaurant+Cesky+Krumlov" target="_blank" class="icon-link">🍽️ 晚餐：Papa's Living Restaurant</a></td>
+              <td class="note-col"></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
     </div>
   </section>
 
-  <!-- Accommodations -->
-  <section class="section" id="hotels">
-    <h2 class="section-title">住宿安排</h2>
-    <div class="hotels-grid">
-      <div class="hotel-card">
-        <div class="hotel-city">薩爾斯堡 Salzburg</div>
-        <div class="hotel-name">Vier Jahreszeiten Salzburg</div>
-        <div class="hotel-nights">2晚</div>
+  <!-- Prague & CK Section (Days 4-8) -->
+  <section class="parallax-wrapper parallax-prague">
+    <div class="glass-container">
+
+      <!-- Day 4 -->
+      <div class="glass-card timeline-item">
+        <div class="day-header">
+          <div class="day-title">Day 4｜7/19 (日)　CK晨間時光 → 布拉格 🇨🇿</div>
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <td class="time-col">09:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Cesky+Krumlov+Castle" target="_blank" class="icon-link">📍 CK城堡外觀 & 彩繪塔</a></td>
+              <td class="note-col">外觀免費，登塔可俯瞰河景</td>
+            </tr>
+            <tr>
+              <td class="time-col">12:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Krcma+v+Satlavske+Cesky+Krumlov" target="_blank" class="icon-link">🍽️ 午餐：Krčma v Šatlavské</a></td>
+              <td class="note-col">地窖炭烤豬腳，建議預約</td>
+            </tr>
+            <tr>
+              <td class="time-col">14:00</td>
+              <td class="activity-col">📍 斗篷橋與城堡花園漫步</td>
+              <td class="note-col">免費，巴洛克花園</td>
+            </tr>
+            <tr>
+              <td class="time-col">17:15</td>
+              <td class="activity-col">🚌 RegioJet 巴士 → 布拉格</td>
+              <td class="note-col"><span class="badge badge-booked">已購票</span> 抵達 Na Knížecí 約20:15</td>
+            </tr>
+            <tr>
+              <td class="time-col">20:15</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Hotel+Golden+Crown+Prague" target="_blank" class="icon-link">🏨 Check-in Hotel Golden Crown</a></td>
+              <td class="note-col"><span class="badge badge-action">重要</span> 今晚務必上網訂布拉格城堡票！</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="hotel-card">
-        <div class="hotel-city">庫倫洛夫 Český Krumlov</div>
-        <div class="hotel-name">Penzion Landauer</div>
-        <div class="hotel-nights">1晚</div>
+
+      <!-- Day 5 -->
+      <div class="glass-card timeline-item">
+        <div class="day-header">
+          <div class="day-title">Day 5｜7/20 (一)　舊城與猶太區 🇨🇿</div>
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <td class="time-col">09:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Charles+Bridge+Prague" target="_blank" class="icon-link">📍 查理大橋</a></td>
+              <td class="note-col">早起人少，橋上30座巴洛克雕像</td>
+            </tr>
+            <tr>
+              <td class="time-col">10:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Prague+Astronomical+Clock" target="_blank" class="icon-link">📍 舊城廣場 & 天文鐘</a></td>
+              <td class="note-col">整點前10分鐘占好位置看報時</td>
+            </tr>
+            <tr>
+              <td class="time-col">12:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Cafe+Imperial+Prague" target="_blank" class="icon-link">🍽️ 午餐：Café Imperial</a></td>
+              <td class="note-col">帝國蛋糕必點，百年咖啡廳</td>
+            </tr>
+            <tr>
+              <td class="time-col">14:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Spanish+Synagogue+Prague" target="_blank" class="icon-link">📍 西班牙會堂</a></td>
+              <td class="note-col">摩爾式建築，金色馬賽克裝飾</td>
+            </tr>
+            <tr>
+              <td class="time-col">16:30</td>
+              <td class="activity-col">📍 火藥塔與市民會館</td>
+              <td class="note-col">外觀免費，新藝術風格</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="hotel-card">
-        <div class="hotel-city">布拉格 Prague</div>
-        <div class="hotel-name">Hotel Golden Crown</div>
-        <div class="hotel-nights">5晚</div>
+
+      <!-- Day 6 -->
+      <div class="glass-card timeline-item">
+        <div class="day-header">
+          <div class="day-title">Day 6｜7/21 (二)　城堡區 🇨🇿</div>
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <td class="time-col">09:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Prague+Castle" target="_blank" class="icon-link">📍 布拉格城堡 Circuit B</a></td>
+              <td class="note-col"><span class="badge badge-booked">需購票</span> QR Code 直接入場<br>含聖維特大教堂、舊皇宮、黃金巷</td>
+            </tr>
+            <tr>
+              <td class="time-col">12:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Kuchyn+Prague" target="_blank" class="icon-link">🍽️ 午餐：Kuchyň</a></td>
+              <td class="note-col">城堡旁景觀餐廳，露台俯瞰布拉格</td>
+            </tr>
+            <tr>
+              <td class="time-col">14:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=St+Nicholas+Church+Mala+Strana" target="_blank" class="icon-link">📍 聖尼古拉教堂 (小城區)</a></td>
+              <td class="note-col">巴洛克穹頂，天頂濕壁畫</td>
+            </tr>
+            <tr>
+              <td class="time-col">16:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Petrin+Lookout+Tower" target="_blank" class="icon-link">📍 佩特任山纜車 & 瞭望台</a></td>
+              <td class="note-col">布拉格艾菲爾鐵塔，360度全景</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="hotel-card">
-        <div class="hotel-city">維也納 Vienna</div>
-        <div class="hotel-name">Leonardo Hotel Vienna Hbf</div>
-        <div class="hotel-nights">3晚</div>
+
+      <!-- Day 7 & 8 Combined for Brevity in demo, but let's detail them out! -->
+      <div class="glass-card timeline-item">
+        <div class="day-header">
+          <div class="day-title">Day 7｜7/22 (三)　卡爾斯特因城堡日遊 🇨🇿</div>
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <td class="time-col">08:15</td>
+              <td class="activity-col">🚂 搭火車前往 Karlštejn</td>
+              <td class="note-col">Praha hl.n. 出發，約40分鐘</td>
+            </tr>
+            <tr>
+              <td class="time-col">10:10</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Karlstejn+Castle" target="_blank" class="icon-link">📍 Karlštejn Tour 1 & 2</a></td>
+              <td class="note-col"><span class="badge badge-optional">看狀況</span> 皇室宮殿與聖十字禮拜堂</td>
+            </tr>
+            <tr>
+              <td class="time-col">13:15</td>
+              <td class="activity-col">🍽️ 午餐：U Adama</td>
+              <td class="note-col">城堡山腳下，烤肉燉菜</td>
+            </tr>
+            <tr>
+              <td class="time-col">14:45</td>
+              <td class="activity-col">🚂 搭火車回布拉格</td>
+              <td class="note-col">約40分鐘</td>
+            </tr>
+            <tr>
+              <td class="time-col">19:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Las+Adelitas+Prague" target="_blank" class="icon-link">🍽️ 晚餐：Las Adelitas</a></td>
+              <td class="note-col">墨西哥料理，口味轉換</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="glass-card timeline-item">
+        <div class="day-header">
+          <div class="day-title">Day 8｜7/23 (四)　高堡與河畔 🇨🇿</div>
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <td class="time-col">09:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Vysehrad+Prague" target="_blank" class="icon-link">📍 高堡區 (Vyšehrad)</a></td>
+              <td class="note-col">免費入園，波西米亞王國起源地</td>
+            </tr>
+            <tr>
+              <td class="time-col">13:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Cafe+Savoy+Prague" target="_blank" class="icon-link">🍽️ 午餐：Café Savoy</a></td>
+              <td class="note-col">百年咖啡廳，新藝術天花板，建議預訂</td>
+            </tr>
+            <tr>
+              <td class="time-col">15:00</td>
+              <td class="activity-col">📍 伏爾塔瓦河畔散步</td>
+              <td class="note-col">可看查理大橋、城堡全景</td>
+            </tr>
+            <tr>
+              <td class="time-col">17:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Letna+Park+Prague" target="_blank" class="icon-link">📍 萊特納公園看夕陽</a></td>
+              <td class="note-col">布拉格最佳夕陽觀景點，啤酒花園</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Vienna Section (Days 9-12) -->
+  <section class="parallax-wrapper parallax-vienna">
+    <div class="glass-container">
+
+      <!-- Alerts for Vienna -->
+      <div class="glass-card">
+        <h2 class="section-title" style="margin-bottom: 1rem;">⚠️ 維也納重要注意事項</h2>
+        <div class="alert alert-warning">
+          <h4>🎫 Sisi Pass（7/25）</h4>
+          <ul style="margin-left: 1.5rem; margin-top: 0.5rem; line-height: 1.8;">
+            <li>入場時間 <strong>08:45–09:00 嚴格執行</strong>，逾時不候！</li>
+            <li>霍夫堡<strong>沒有行李寄存</strong>，當天勿帶大包。</li>
+            <li>含：熊布朗宮 + 霍夫堡 Sisi 博物館 + 家具博物館。</li>
+          </ul>
+        </div>
+        <div class="alert alert-warning">
+          <h4>🎵 金色大廳（7/26）</h4>
+          <ul style="margin-left: 1.5rem; margin-top: 0.5rem; line-height: 1.8;">
+            <li>Stehplatz 站票，<strong>19:30 需到場</strong>卡位！</li>
+            <li>大衣、外套、背包需付費寄放衣帽間。</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 9 -->
+      <div class="glass-card timeline-item">
+        <div class="day-header">
+          <div class="day-title">Day 9｜7/24 (五)　抵達維也納 🇦🇹</div>
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <td class="time-col">09:48</td>
+              <td class="activity-col">🚂 RegioJet 火車 → 維也納</td>
+              <td class="note-col"><span class="badge badge-booked">已購票</span> Praha hl.n. 出發，約4小時</td>
+            </tr>
+            <tr>
+              <td class="time-col">14:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Leonardo+Hotel+Vienna+Hauptbahnhof" target="_blank" class="icon-link">🏨 Check-in Leonardo Hotel</a></td>
+              <td class="note-col">Wien Hbf 旁</td>
+            </tr>
+            <tr>
+              <td class="time-col">16:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=St+Stephen+Cathedral+Vienna" target="_blank" class="icon-link">📍 聖史蒂芬大教堂</a></td>
+              <td class="note-col">外觀免費，南塔可付費登頂</td>
+            </tr>
+            <tr>
+              <td class="time-col">17:30</td>
+              <td class="activity-col">📍 格拉本大街 + 克恩頓大街</td>
+              <td class="note-col">黑死病紀念柱、精品購物</td>
+            </tr>
+            <tr>
+              <td class="time-col">19:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Plachutta+Wollzeile+Vienna" target="_blank" class="icon-link">🍽️ 晚餐：Plachutta Wollzeile</a></td>
+              <td class="note-col">Tafelspitz 清燉牛肉鍋，建議預訂</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Day 10 -->
+      <div class="glass-card timeline-item">
+        <div class="day-header">
+          <div class="day-title">Day 10｜7/25 (六)　熊布朗宮 + 納許市場 🇦🇹</div>
+          <div class="day-weather">🎫 Sisi Pass 日</div>
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <td class="time-col">08:45</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Schoenbrunn+Palace" target="_blank" class="icon-link">📍 熊布朗宮入場</a></td>
+              <td class="note-col"><span class="badge badge-booked">已購票</span> <strong>08:45–09:00 時段票，逾時不候！</strong></td>
+            </tr>
+            <tr>
+              <td class="time-col">11:00</td>
+              <td class="activity-col">📍 熊布朗宮花園 → 葛羅莉亞觀景台</td>
+              <td class="note-col">觀景台約€5，俯瞰維也納市景</td>
+            </tr>
+            <tr>
+              <td class="time-col">12:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Cafe+Residenz+Schoenbrunn" target="_blank" class="icon-link">🍽️ 午餐：Café Residenz</a></td>
+              <td class="note-col">宮殿周邊，或搭 U4 回市區</td>
+            </tr>
+            <tr>
+              <td class="time-col">14:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Karlskirche+Vienna" target="_blank" class="icon-link">📍 卡爾教堂 (Karlskirche)</a></td>
+              <td class="note-col">外觀免費，內部全景電梯約€8</td>
+            </tr>
+            <tr>
+              <td class="time-col">15:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Naschmarkt+Vienna" target="_blank" class="icon-link">📍 納許市場 (Naschmarkt)</a></td>
+              <td class="note-col">週六最熱鬧，16:30後開始收攤</td>
+            </tr>
+            <tr>
+              <td class="time-col">18:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Ribs+of+Vienna" target="_blank" class="icon-link">🍽️ 晚餐：Ribs of Vienna</a></td>
+              <td class="note-col">豪邁豬肋排，建議預約</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Day 11 -->
+      <div class="glass-card timeline-item">
+        <div class="day-header">
+          <div class="day-title">Day 11｜7/26 (日)　藝術 + 霍夫堡 + 金色大廳 🇦🇹</div>
+          <div class="day-weather">🎫 上美景宮 + Sisi Pass 日</div>
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <td class="time-col">09:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Upper+Belvedere+Vienna" target="_blank" class="icon-link">📍 上美景宮入場</a></td>
+              <td class="note-col"><span class="badge badge-booked">已購票</span> 克林姆《吻》真跡</td>
+            </tr>
+            <tr>
+              <td class="time-col">11:30</td>
+              <td class="activity-col">📍 美景宮花園散步</td>
+              <td class="note-col">免費，巴洛克花園</td>
+            </tr>
+            <tr>
+              <td class="time-col">12:15</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Cafe+Central+Vienna" target="_blank" class="icon-link">🍽️ 午餐：Café Central</a></td>
+              <td class="note-col">1876年百年咖啡廳，建議早點到</td>
+            </tr>
+            <tr>
+              <td class="time-col">14:00</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Hofburg+Vienna" target="_blank" class="icon-link">📍 霍夫堡 Sisi 博物館</a></td>
+              <td class="note-col"><span class="badge badge-booked">已購票</span> QR Code 直接入場</td>
+            </tr>
+            <tr>
+              <td class="time-col">17:15</td>
+              <td class="activity-col">回飯店換裝休息</td>
+              <td class="note-col">充裕時間準備音樂會</td>
+            </tr>
+            <tr>
+              <td class="time-col">19:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Musikverein+Vienna" target="_blank" class="icon-link">📍 入場金色大廳</a></td>
+              <td class="note-col"><span class="badge badge-booked">已購票</span> <strong>19:30 需到場卡位站票</strong></td>
+            </tr>
+            <tr>
+              <td class="time-col">20:00</td>
+              <td class="activity-col">🎵 音樂會開始</td>
+              <td class="note-col">Mozart & Vivaldi</td>
+            </tr>
+            <tr>
+              <td class="time-col">21:30</td>
+              <td class="activity-col"><a href="https://www.google.com/maps/search/?api=1&query=Gasthaus+Poschl+Vienna" target="_blank" class="icon-link">🍽️ 最後晚餐：Gasthaus Pöschl</a></td>
+              <td class="note-col">或 Café Schwarzenberg</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Day 12 -->
+      <div class="glass-card timeline-item">
+        <div class="day-header">
+          <div class="day-title">Day 12｜7/27 (一)　返家 🇦🇹</div>
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <td class="time-col">09:00</td>
+              <td class="activity-col">整理行李退房</td>
+              <td class="note-col"></td>
+            </tr>
+            <tr>
+              <td class="time-col">09:30</td>
+              <td class="activity-col">🚂 搭 Railjet 前往機場</td>
+              <td class="note-col">Wien Hbf 直達，約15分鐘</td>
+            </tr>
+            <tr>
+              <td class="time-col">10:00</td>
+              <td class="activity-col">維也納機場報到、退稅</td>
+              <td class="note-col">保留購物收據，Global Blue 退稅</td>
+            </tr>
+            <tr>
+              <td class="time-col">12:30</td>
+              <td class="activity-col">✈️ 搭機返台 EVA AIR</td>
+              <td class="note-col">抵達桃園 7/28 06:30</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Accommodations Summary -->
+  <section class="parallax-wrapper" style="background-color: var(--slate); padding: 4rem 2rem; min-height: auto;">
+    <div class="glass-container">
+      <div class="glass-card" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: white;">
+        <h2 class="section-title" style="color: white;">🏨 住宿總覽</h2>
+        <div class="hotels-grid">
+          <div class="hotel-card" style="background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1);">
+            <div class="hotel-city" style="color: var(--gold);">薩爾斯堡 Salzburg</div>
+            <div class="hotel-name" style="color: white;"><a href="https://www.google.com/maps/search/?api=1&query=Vier+Jahreszeiten+Salzburg" target="_blank" style="color: white; border-bottom: 1px dotted white;">📍 Vier Jahreszeiten</a></div>
+            <div class="hotel-nights">2晚</div>
+          </div>
+          <div class="hotel-card" style="background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1);">
+            <div class="hotel-city" style="color: var(--gold);">庫倫洛夫 CK</div>
+            <div class="hotel-name" style="color: white;"><a href="https://www.google.com/maps/search/?api=1&query=Penzion+Landauer+Cesky+Krumlov" target="_blank" style="color: white; border-bottom: 1px dotted white;">📍 Penzion Landauer</a></div>
+            <div class="hotel-nights">1晚</div>
+          </div>
+          <div class="hotel-card" style="background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1);">
+            <div class="hotel-city" style="color: var(--gold);">布拉格 Prague</div>
+            <div class="hotel-name" style="color: white;"><a href="https://www.google.com/maps/search/?api=1&query=Hotel+Golden+Crown+Prague" target="_blank" style="color: white; border-bottom: 1px dotted white;">📍 Hotel Golden Crown</a></div>
+            <div class="hotel-nights">5晚</div>
+          </div>
+          <div class="hotel-card" style="background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1);">
+            <div class="hotel-city" style="color: var(--gold);">維也納 Vienna</div>
+            <div class="hotel-name" style="color: white;"><a href="https://www.google.com/maps/search/?api=1&query=Leonardo+Hotel+Vienna+Hauptbahnhof" target="_blank" style="color: white; border-bottom: 1px dotted white;">📍 Leonardo Hotel Hbf</a></div>
+            <div class="hotel-nights">3晚</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
