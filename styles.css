@@ -20,6 +20,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--ivory);
@@ -187,6 +191,77 @@ a:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
+/* TOC Navigation */
+.toc-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.toc-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  background: white;
+  color: var(--slate);
+  font-weight: 600;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+  border: 1px solid var(--light-gray);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.toc-btn:hover {
+  transform: translateY(-5px);
+  background: var(--rose);
+  color: white;
+  box-shadow: 0 8px 25px rgba(232, 193, 197, 0.4);
+  border-color: var(--rose);
+}
+
+/* Floating Action Button (FAB) */
+.fab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--gold);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fab.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+  background: var(--dark-gold);
+  color: white;
+}
+
+.fab span {
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+}
+
 /* Tables */
 table {
   width: 100%;
@@ -329,6 +404,108 @@ tr:hover {
   color: white;
   border-radius: 20px;
   font-size: 0.85rem;
+}
+
+/* Food & Supermarket Cards */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.food-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  border: 1px solid var(--light-gray);
+  position: relative;
+  overflow: hidden;
+}
+
+.food-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.food-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: var(--slate);
+  margin-bottom: 0.2rem;
+}
+
+.food-type {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--sage);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.rating {
+  background: #fff8e1;
+  color: #f57f17;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.price-tag {
+  display: inline-block;
+  background: #f1f8e9;
+  color: #33691e;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.food-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-pill {
+  background: var(--ivory);
+  border: 1px solid var(--rose);
+  color: var(--slate);
+  padding: 0.2rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.review-box {
+  background: var(--light-gray);
+  padding: 1rem;
+  border-radius: 8px;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--gold);
+}
+
+.food-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  border-top: 1px dashed #ddd;
+  padding-top: 1rem;
+}
+
+.food-links a {
+  font-size: 0.9rem;
 }
 
 /* Footer */

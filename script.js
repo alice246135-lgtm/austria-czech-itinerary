@@ -59,5 +59,18 @@ document.addEventListener("DOMContentLoaded", () => {
       }, "-=0.4"); // Overlap with the card animation
     }
   });
+
+  // 3. Floating Action Button (FAB) Logic
+  const fabBtn = document.getElementById("fabBtn");
+  if (fabBtn) {
+    window.addEventListener("scroll", () => {
+      // Show FAB after scrolling down 500px
+      if (window.scrollY > 500) {
+        fabBtn.classList.add("visible");
+      } else {
+        fabBtn.classList.remove("visible");
+      }
+    });
+  }
 });
 
