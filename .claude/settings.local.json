@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/taialisia/.baoyu-skills/baoyu-article-illustrator/**)",
+      "Read(//Users/taialisia/.config/baoyu-skills/baoyu-article-illustrator/**)"
+    ]
+  }
+}
