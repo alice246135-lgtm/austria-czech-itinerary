@@ -525,52 +525,79 @@ footer h2 {
 /* Removed static CSS keyframes as GSAP now handles animations */
 
 /* Responsive */
+/* Responsive */
 @media (max-width: 768px) {
-  /* 1. Fix iOS Parallax Scroll Lag */
+  /* 1. Fix iOS Parallax Scroll Lag & Reduce wrapper padding */
   .parallax-wrapper {
     background-attachment: scroll !important;
+    padding: 3rem 1rem !important;
   }
 
   /* Shrink hero and pad */
-  .hero-content h1 { font-size: 2.5rem; }
-  .hero-content .subtitle { font-size: 1.1rem; }
-  .glass-card { padding: 1.5rem; border-radius: 16px; }
+  .hero-content { padding: 2rem !important; }
+  .hero-content h1 { font-size: 2.2rem; }
+  .hero-content .subtitle { font-size: 1rem; margin-bottom: 1rem; }
+  .glass-card { padding: 1rem; border-radius: 12px; }
   
-  .day-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
-  .day-title { font-size: 1.4rem; }
+  .section-title { font-size: 1.8rem; margin-bottom: 1.5rem; }
+  .day-header { flex-direction: column; align-items: flex-start; gap: 0.3rem; margin-bottom: 1rem; }
+  .day-title { font-size: 1.3rem; }
+  .day-weather { font-size: 0.95rem; padding: 0.2rem 0.8rem; }
   
-  /* Touch targets */
-  .toc-btn { padding: 1rem; font-size: 1rem; }
-  .icon-link { padding: 0.5rem 0; display: inline-block; }
+  /* Compact TOC Navigation */
+  .toc-container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 0.5rem; 
+    margin-top: 1rem; 
+  }
+  .toc-btn { 
+    flex: 1 1 auto; 
+    padding: 0.6rem 0.8rem; 
+    font-size: 0.9rem; 
+    border-radius: 8px; 
+  }
+  
+  /* Fix links breaking into new lines unnecessarily */
+  .icon-link { padding: 0.2rem 0; display: inline; line-height: 1.5; }
   
   /* Mobile Timeline Cards (Table Override) */
   table, thead, tbody, th, td, tr { display: block; }
   thead tr { position: absolute; top: -9999px; left: -9999px; }
+  table { margin: 0.5rem 0; }
   
   tr { 
     background: #fcfcfc;
     border: 1px solid var(--light-gray); 
-    margin-bottom: 1rem; 
-    border-radius: 12px; 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-    padding: 1rem;
+    margin-bottom: 0.5rem; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    padding: 0.8rem;
   }
   
   td { 
     border: none; 
-    padding: 0.25rem 0; 
+    padding: 0.1rem 0; 
   }
   
   /* Flight table logic override */
-  td:nth-of-type(1) { font-size: 1.2rem; font-weight: 700; color: var(--gold); border-bottom: 2px dotted var(--rose); margin-bottom: 0.5rem; padding-bottom: 0.5rem; }
-  td:nth-of-type(2) { font-size: 1.1rem; font-weight: 600; color: var(--slate); }
-  td:nth-of-type(3) { font-size: 0.95rem; color: #666; margin-top: 0.25rem; }
-  td:nth-of-type(4) { font-size: 0.95rem; color: #666; }
+  td:nth-of-type(1) { font-size: 1.1rem; font-weight: 700; color: var(--gold); border-bottom: 1px dotted var(--rose); margin-bottom: 0.3rem; padding-bottom: 0.3rem; }
+  td:nth-of-type(2) { font-size: 1rem; font-weight: 600; color: var(--slate); }
+  td:nth-of-type(3) { font-size: 0.9rem; color: #666; margin-top: 0.1rem; }
+  td:nth-of-type(4) { font-size: 0.9rem; color: #666; }
 
-  /* Food Grid to 1 column */
-  .food-grid { grid-template-columns: 1fr; }
+  /* Food Grid */
+  .food-grid { grid-template-columns: 1fr; gap: 1rem; margin-top: 1rem; }
+  .food-card { padding: 1.2rem; }
+  .food-title { font-size: 1.2rem; }
+  .review-box { padding: 0.8rem; font-size: 0.85rem; }
+  
+  /* Alerts */
+  .alert { padding: 1rem; margin: 1rem 0; }
+  .alert h4 { font-size: 1rem; }
+  .alert ul { margin-left: 1rem !important; line-height: 1.5 !important; }
   
   /* FAB repositioning */
-  .fab { right: 1rem; bottom: 1rem; width: 50px; height: 50px; font-size: 0.7rem; }
+  .fab { right: 1rem; bottom: 1rem; width: 45px; height: 45px; font-size: 0.6rem; }
   .fab span { font-size: 1rem; margin-bottom: 0; }
 }
