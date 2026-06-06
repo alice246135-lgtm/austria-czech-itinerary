@@ -107,20 +107,13 @@ a:hover {
   border-radius: 20px;
   border: 1px solid var(--glass-border);
   box-shadow: var(--shadow);
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.glass-card.visible {
-  opacity: 1;
-  transform: translateY(0);
+  /* GSAP will control opacity and transform */
 }
 
 /* Hero Section */
 .hero-content {
   text-align: center;
-  animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  /* GSAP will control the hero animations */
 }
 
 .hero-content h1 {
@@ -352,10 +345,7 @@ footer h2 {
 }
 
 /* Animations */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+/* Removed static CSS keyframes as GSAP now handles animations */
 
 /* Responsive */
 @media (max-width: 768px) {
