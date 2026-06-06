@@ -526,27 +526,51 @@ footer h2 {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero-content h1 { font-size: 3rem; }
-  .glass-card { padding: 2rem; }
-  .day-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  /* 1. Fix iOS Parallax Scroll Lag */
+  .parallax-wrapper {
+    background-attachment: scroll !important;
+  }
+
+  /* Shrink hero and pad */
+  .hero-content h1 { font-size: 2.5rem; }
+  .hero-content .subtitle { font-size: 1.1rem; }
+  .glass-card { padding: 1.5rem; border-radius: 16px; }
   
-  /* Mobile Tables */
+  .day-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .day-title { font-size: 1.4rem; }
+  
+  /* Touch targets */
+  .toc-btn { padding: 1rem; font-size: 1rem; }
+  .icon-link { padding: 0.5rem 0; display: inline-block; }
+  
+  /* Mobile Timeline Cards (Table Override) */
   table, thead, tbody, th, td, tr { display: block; }
   thead tr { position: absolute; top: -9999px; left: -9999px; }
-  tr { border-bottom: 2px solid var(--light-gray); margin-bottom: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-  td { border: none; position: relative; padding-left: 50%; }
-  td::before {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-    font-weight: 600;
-    color: var(--sage);
+  
+  tr { 
+    background: #fcfcfc;
+    border: 1px solid var(--light-gray); 
+    margin-bottom: 1rem; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    padding: 1rem;
   }
-  td:nth-of-type(1)::before { content: "時間"; }
-  td:nth-of-type(2)::before { content: "行程"; }
-  td:nth-of-type(3)::before { content: "備註"; }
-  .time-col { width: auto; color: var(--gold); }
+  
+  td { 
+    border: none; 
+    padding: 0.25rem 0; 
+  }
+  
+  /* Flight table logic override */
+  td:nth-of-type(1) { font-size: 1.2rem; font-weight: 700; color: var(--gold); border-bottom: 2px dotted var(--rose); margin-bottom: 0.5rem; padding-bottom: 0.5rem; }
+  td:nth-of-type(2) { font-size: 1.1rem; font-weight: 600; color: var(--slate); }
+  td:nth-of-type(3) { font-size: 0.95rem; color: #666; margin-top: 0.25rem; }
+  td:nth-of-type(4) { font-size: 0.95rem; color: #666; }
+
+  /* Food Grid to 1 column */
+  .food-grid { grid-template-columns: 1fr; }
+  
+  /* FAB repositioning */
+  .fab { right: 1rem; bottom: 1rem; width: 50px; height: 50px; font-size: 0.7rem; }
+  .fab span { font-size: 1rem; margin-bottom: 0; }
 }
